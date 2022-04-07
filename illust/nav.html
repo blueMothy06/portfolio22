@@ -1,0 +1,34 @@
+<ul>
+  <div class="sidenav">
+    <a href="../index.html"><img src="../logo.png"></a>
+    <a href="../index.html">Home</a>
+    <button class="dropdown-btn">Work</button>
+    <div class="dropdown-container">
+      <a href="illust.html">Illustrations</a>
+      <a href="../coding/coding.html">Coding Projects</a>
+      <a href="vid/vid.html">Film/Photography</a>
+    </div>
+    <a href="index.html">About</a>
+    <a href="https://www.instagram.com/pv_scylla/"><img src="../insta.png"></a>
+  </div>
+</ul>
+
+<script>
+  //* Loop through all dropdown buttons to toggle between hiding and
+  /* showing its dropdown content - This allows the user to have multiple
+  /* dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+
+  for (i = 0; i < dropdown.length; i++) {
+    dropdown[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var dropdownContent = this.nextElementSibling;
+      if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+      } else {
+        dropdownContent.style.display = "block";
+      }
+    });
+  }
+</script>
