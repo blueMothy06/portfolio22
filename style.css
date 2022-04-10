@@ -141,7 +141,7 @@ li {
   background: #b84042;
 }
 
-/* grid org */
+/* grid org*/
 
 .imglist {
   list-style-type: none;
@@ -162,4 +162,24 @@ li {
   height: 350px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+.gallery {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-left: 20%;
+  text-align: center;
+}
+
+.gallery img {
+  max-width: 350px;
+  height: 350px;
+  padding: 5px;
+  transition: 1s;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.gallery img:hover {
+  transform: scale(1.1);
 }
